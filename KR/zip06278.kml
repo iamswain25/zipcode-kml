@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<kml xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:atom="http://www.w3.org/2005/Atom" xmlns="http://www.opengis.net/kml/2.2">
+  <Document>
+    <LookAt>
+      <longitude>127</longitude>
+      <latitude>37.5</latitude>
+      <range>7000000</range>
+      <tilt>10</tilt>
+      <heading>0</heading>
+    </LookAt>
+    <name>Korea</name>
+    <visibility>1</visibility>
+    <Style id="KMLStyler">
+      <IconStyle>
+        <scale>0.8</scale>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1.0</scale>
+      </LabelStyle>
+      <LineStyle>
+        <color>ffbc822f</color>
+        <width>2</width>
+        <gx:labelVisibility>0</gx:labelVisibility>
+      </LineStyle>
+      <PolyStyle>
+        <color>7fe1ca9e</color>
+      </PolyStyle>
+    </Style>
+    <Schema name="kml_schema_kr_2018_oct" id="kml_schema_kr_2018_oct">
+      <SimpleField name="BAS_MGT_SN" type="string"/>
+      <SimpleField name="CTP_KOR_NM" type="string"/>
+      <SimpleField name="SIG_CD" type="string"/>
+      <SimpleField name="SIG_KOR_NM" type="string"/>
+      <SimpleField name="BAS_ID" type="string"/>
+      <SimpleField name="BAS_AR" type="float"/>
+      <SimpleField name="NTFC_DE" type="string"/>
+      <SimpleField name="MVMN_DE" type="string"/>
+      <SimpleField name="MVMN_RESN" type="string"/>
+      <SimpleField name="OPERT_DE" type="string"/>
+    </Schema>
+    <Folder id="kml_schema_kr_2018_oct_folder">
+      <name>korea</name>
+    </Folder>
+    <Placemark>
+      <ExtendedData>
+        <SchemaData schemaUrl="#kml_schema_kr_2018_oct">
+          <SimpleData name="BAS_MGT_SN">1168000125</SimpleData>
+          <SimpleData name="CTP_KOR_NM">서울특별시</SimpleData>
+          <SimpleData name="SIG_CD">11680</SimpleData>
+          <SimpleData name="SIG_KOR_NM">강남구</SimpleData>
+          <SimpleData name="BAS_ID">06278</SimpleData>
+          <SimpleData name="BAS_AR">0.10264300000000000</SimpleData>
+          <SimpleData name="NTFC_DE">20140926</SimpleData>
+          <SimpleData name="MVMN_DE">20140917</SimpleData>
+          <SimpleData name="MVMN_RESN">기초구역 경계 변경에 의한 기초구역 변경</SimpleData>
+          <SimpleData name="OPERT_DE">20140917000000</SimpleData>
+        </SchemaData>
+      </ExtendedData>
+      <MultiGeometry>
+        <Polygon>
+          <altitudeMode>clampToGround</altitudeMode>
+          <outerBoundaryIs>
+            <LinearRing>
+              <altitudeMode>clampToGround</altitudeMode>
+              <coordinates>127.058626682707,37.4957406696912,0 127.058535428652,37.4956300399231,0 127.058075254762,37.495423301565,0 127.057808295884,37.4953089120421,0 127.057529244771,37.4952034475412,0 127.057387293092,37.4951572033859,0 127.056592612626,37.494924848364,0 127.056372624742,37.4948629619489,0 127.055851059991,37.4945254884738,0 127.055872145245,37.4944952692737,0 127.055784669459,37.4944388205498,0 127.054748717168,37.4937702996652,0 127.054679838847,37.4937494268715,0 127.054326800336,37.4935300660746,0 127.054210211576,37.4934576692113,0 127.054116745347,37.4936493347773,0 127.054072427754,37.4937434729224,0 127.053842234855,37.4942334125381,0 127.053739371334,37.49445223876,0 127.053572778566,37.4948066123137,0 127.053396335733,37.495178631506,0 127.053337635522,37.4952937148923,0 127.053215553599,37.4955576080256,0 127.053125291842,37.4957528304125,0 127.053039644519,37.4959380687684,0 127.052945439344,37.4961416725828,0 127.052862708506,37.4963077176805,0 127.05466721824,37.4968780179915,0 127.054690439185,37.4968847920663,0 127.056299634348,37.4974092402132,0 127.056575673989,37.4968685486697,0 127.057107707044,37.4958264110366,0 127.057568180464,37.4958413928845,0 127.057759224293,37.4958476091977,0 127.057764060644,37.4958247580061,0 127.05843151275,37.4958469088931,0 127.058626682707,37.4957406696912,0</coordinates>
+            </LinearRing>
+          </outerBoundaryIs>
+        </Polygon>
+      </MultiGeometry>
+      <styleUrl>#KMLStyler</styleUrl>
+      <name>06278</name>
+    </Placemark>
+  </Document>
+</kml>

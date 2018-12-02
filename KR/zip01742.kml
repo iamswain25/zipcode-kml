@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<kml xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:atom="http://www.w3.org/2005/Atom" xmlns="http://www.opengis.net/kml/2.2">
+  <Document>
+    <LookAt>
+      <longitude>127</longitude>
+      <latitude>37.5</latitude>
+      <range>7000000</range>
+      <tilt>10</tilt>
+      <heading>0</heading>
+    </LookAt>
+    <name>Korea</name>
+    <visibility>1</visibility>
+    <Style id="KMLStyler">
+      <IconStyle>
+        <scale>0.8</scale>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1.0</scale>
+      </LabelStyle>
+      <LineStyle>
+        <color>ffbc822f</color>
+        <width>2</width>
+        <gx:labelVisibility>0</gx:labelVisibility>
+      </LineStyle>
+      <PolyStyle>
+        <color>7fe1ca9e</color>
+      </PolyStyle>
+    </Style>
+    <Schema name="kml_schema_kr_2018_oct" id="kml_schema_kr_2018_oct">
+      <SimpleField name="BAS_MGT_SN" type="string"/>
+      <SimpleField name="CTP_KOR_NM" type="string"/>
+      <SimpleField name="SIG_CD" type="string"/>
+      <SimpleField name="SIG_KOR_NM" type="string"/>
+      <SimpleField name="BAS_ID" type="string"/>
+      <SimpleField name="BAS_AR" type="float"/>
+      <SimpleField name="NTFC_DE" type="string"/>
+      <SimpleField name="MVMN_DE" type="string"/>
+      <SimpleField name="MVMN_RESN" type="string"/>
+      <SimpleField name="OPERT_DE" type="string"/>
+    </Schema>
+    <Folder id="kml_schema_kr_2018_oct_folder">
+      <name>korea</name>
+    </Folder>
+    <Placemark>
+      <ExtendedData>
+        <SchemaData schemaUrl="#kml_schema_kr_2018_oct">
+          <SimpleData name="BAS_MGT_SN">1135000137</SimpleData>
+          <SimpleData name="CTP_KOR_NM">서울특별시</SimpleData>
+          <SimpleData name="SIG_CD">11350</SimpleData>
+          <SimpleData name="SIG_KOR_NM">노원구</SimpleData>
+          <SimpleData name="BAS_ID">01742</SimpleData>
+          <SimpleData name="BAS_AR">0.04506900000000000</SimpleData>
+          <SimpleData name="NTFC_DE">20121221</SimpleData>
+        </SchemaData>
+      </ExtendedData>
+      <MultiGeometry>
+        <Polygon>
+          <altitudeMode>clampToGround</altitudeMode>
+          <outerBoundaryIs>
+            <LinearRing>
+              <altitudeMode>clampToGround</altitudeMode>
+              <coordinates>127.075442509558,37.6506902903617,0 127.07543973563,37.6505783098652,0 127.07543445916,37.6503651784206,0 127.075442532088,37.6503471628632,0 127.075458697053,37.6503304216194,0 127.075486197458,37.6503175384521,0 127.075524529698,37.6503148835658,0 127.07562971576,37.6503094747557,0 127.076131062736,37.6503002571323,0 127.076162383957,37.6502895607614,0 127.076180264749,37.6502664214072,0 127.076180164992,37.6501667645728,0 127.076141337949,37.6491865351658,0 127.076141270332,37.6491865374043,0 127.076091986811,37.6491876287951,0 127.074952009281,37.649205100741,0 127.074955015015,37.649265463063,0 127.074385952342,37.6492688791968,0 127.074383647518,37.6492292390099,0 127.072947687225,37.649282905889,0 127.071776032147,37.6493266833447,0 127.072714429093,37.6499609479906,0 127.07339126418,37.6504319279995,0 127.073864009382,37.6504208273605,0 127.073873735214,37.6506347134393,0 127.07392555207,37.650666216263,0 127.074020736551,37.6507354297028,0 127.074041035374,37.6507304787181,0 127.074070152526,37.6507250549642,0 127.07411456691,37.6507190812063,0 127.074141987108,37.6507165416001,0 127.074168162225,37.6507154443148,0 127.074246122216,37.6507134141383,0 127.074316605233,37.6507133706699,0 127.074410656371,37.65071151065,0 127.074596604645,37.6507068006467,0 127.074756606195,37.6507049895809,0 127.074846350833,37.6507026813992,0 127.074961024612,37.6506998170486,0 127.075158078214,37.6506954596371,0 127.075201477271,37.6506941711759,0 127.075293489285,37.6506929424085,0 127.075442509558,37.6506902903617,0</coordinates>
+            </LinearRing>
+          </outerBoundaryIs>
+        </Polygon>
+      </MultiGeometry>
+      <styleUrl>#KMLStyler</styleUrl>
+      <name>01742</name>
+    </Placemark>
+  </Document>
+</kml>

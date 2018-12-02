@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<kml xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:atom="http://www.w3.org/2005/Atom" xmlns="http://www.opengis.net/kml/2.2">
+  <Document>
+    <LookAt>
+      <longitude>127</longitude>
+      <latitude>37.5</latitude>
+      <range>7000000</range>
+      <tilt>10</tilt>
+      <heading>0</heading>
+    </LookAt>
+    <name>Korea</name>
+    <visibility>1</visibility>
+    <Style id="KMLStyler">
+      <IconStyle>
+        <scale>0.8</scale>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1.0</scale>
+      </LabelStyle>
+      <LineStyle>
+        <color>ffbc822f</color>
+        <width>2</width>
+        <gx:labelVisibility>0</gx:labelVisibility>
+      </LineStyle>
+      <PolyStyle>
+        <color>7fe1ca9e</color>
+      </PolyStyle>
+    </Style>
+    <Schema name="kml_schema_kr_2018_oct" id="kml_schema_kr_2018_oct">
+      <SimpleField name="BAS_MGT_SN" type="string"/>
+      <SimpleField name="CTP_KOR_NM" type="string"/>
+      <SimpleField name="SIG_CD" type="string"/>
+      <SimpleField name="SIG_KOR_NM" type="string"/>
+      <SimpleField name="BAS_ID" type="string"/>
+      <SimpleField name="BAS_AR" type="float"/>
+      <SimpleField name="NTFC_DE" type="string"/>
+      <SimpleField name="MVMN_DE" type="string"/>
+      <SimpleField name="MVMN_RESN" type="string"/>
+      <SimpleField name="OPERT_DE" type="string"/>
+    </Schema>
+    <Folder id="kml_schema_kr_2018_oct_folder">
+      <name>korea</name>
+    </Folder>
+    <Placemark>
+      <ExtendedData>
+        <SchemaData schemaUrl="#kml_schema_kr_2018_oct">
+          <SimpleData name="BAS_MGT_SN">1153000030</SimpleData>
+          <SimpleData name="CTP_KOR_NM">서울특별시</SimpleData>
+          <SimpleData name="SIG_CD">11530</SimpleData>
+          <SimpleData name="SIG_KOR_NM">구로구</SimpleData>
+          <SimpleData name="BAS_ID">08381</SimpleData>
+          <SimpleData name="BAS_AR">0.05517100000000000</SimpleData>
+          <SimpleData name="NTFC_DE">20121221</SimpleData>
+          <SimpleData name="MVMN_DE">20121221</SimpleData>
+          <SimpleData name="MVMN_RESN">국가기초구역 최초생성</SimpleData>
+          <SimpleData name="OPERT_DE">20121221000000</SimpleData>
+        </SchemaData>
+      </ExtendedData>
+      <MultiGeometry>
+        <Polygon>
+          <altitudeMode>clampToGround</altitudeMode>
+          <outerBoundaryIs>
+            <LinearRing>
+              <altitudeMode>clampToGround</altitudeMode>
+              <coordinates>126.895355051211,37.484553387837,0 126.895356522015,37.4845527134079,0 126.895328758784,37.4845167835825,0 126.895111171238,37.4842330429089,0 126.894529463936,37.483487498088,0 126.894463348864,37.4834050146466,0 126.89442368319,37.4833595502385,0 126.894423389701,37.4833592166021,0 126.894031623183,37.4829101894542,0 126.893800190065,37.4826692943163,0 126.893468980934,37.4823185655972,0 126.893384066511,37.4823768637762,0 126.89298047498,37.482653993044,0 126.892470416163,37.4830196361514,0 126.891834909527,37.4834850005538,0 126.891797025196,37.4835213838353,0 126.891906908769,37.4836241548632,0 126.89198614888,37.48369826358,0 126.892098900896,37.4838037130579,0 126.892129715757,37.4838391599302,0 126.892133688969,37.4838437226723,0 126.892334069177,37.4840948727536,0 126.892575711824,37.4843746492886,0 126.892576479371,37.484375541987,0 126.892776854435,37.484632241456,0 126.892952726296,37.4848442644723,0 126.893171210662,37.4851054218242,0 126.893375787565,37.4853521320048,0 126.893402035753,37.4853875923771,0 126.893436826463,37.4854346113846,0 126.893587228483,37.4853712373343,0 126.893786711459,37.4852770305616,0 126.894191259787,37.485089729302,0 126.89427077973,37.4850498241079,0 126.894681678735,37.4848554180291,0 126.8950038011,37.4847135669794,0 126.895250420788,37.4846011008803,0 126.895355051211,37.484553387837,0</coordinates>
+            </LinearRing>
+          </outerBoundaryIs>
+        </Polygon>
+      </MultiGeometry>
+      <styleUrl>#KMLStyler</styleUrl>
+      <name>08381</name>
+    </Placemark>
+  </Document>
+</kml>

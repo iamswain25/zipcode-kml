@@ -73,9 +73,9 @@ parseString(sharedKml, function(err1, sharedKmlObj) {
         const xml = builder.buildObject(top);
 
         fs.writeFileSync(`${__dirname}/../KR/zip${postalCode}.kml`, xml);
-        if(i == 2) {
-          break;
-        }
+        // if(i == 2) {
+        //   break;
+        // }
       }
 
       console.log("Done");

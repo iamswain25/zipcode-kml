@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<kml xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:atom="http://www.w3.org/2005/Atom" xmlns="http://www.opengis.net/kml/2.2">
+  <Document>
+    <LookAt>
+      <longitude>127</longitude>
+      <latitude>37.5</latitude>
+      <range>7000000</range>
+      <tilt>10</tilt>
+      <heading>0</heading>
+    </LookAt>
+    <name>Korea</name>
+    <visibility>1</visibility>
+    <Style id="KMLStyler">
+      <IconStyle>
+        <scale>0.8</scale>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1.0</scale>
+      </LabelStyle>
+      <LineStyle>
+        <color>ffbc822f</color>
+        <width>2</width>
+        <gx:labelVisibility>0</gx:labelVisibility>
+      </LineStyle>
+      <PolyStyle>
+        <color>7fe1ca9e</color>
+      </PolyStyle>
+    </Style>
+    <Schema name="kml_schema_kr_2018_oct" id="kml_schema_kr_2018_oct">
+      <SimpleField name="BAS_MGT_SN" type="string"/>
+      <SimpleField name="CTP_KOR_NM" type="string"/>
+      <SimpleField name="SIG_CD" type="string"/>
+      <SimpleField name="SIG_KOR_NM" type="string"/>
+      <SimpleField name="BAS_ID" type="string"/>
+      <SimpleField name="BAS_AR" type="float"/>
+      <SimpleField name="NTFC_DE" type="string"/>
+      <SimpleField name="MVMN_DE" type="string"/>
+      <SimpleField name="MVMN_RESN" type="string"/>
+      <SimpleField name="OPERT_DE" type="string"/>
+    </Schema>
+    <Folder id="kml_schema_kr_2018_oct_folder">
+      <name>korea</name>
+    </Folder>
+    <Placemark>
+      <ExtendedData>
+        <SchemaData schemaUrl="#kml_schema_kr_2018_oct">
+          <SimpleData name="BAS_MGT_SN">1156000049</SimpleData>
+          <SimpleData name="CTP_KOR_NM">서울특별시</SimpleData>
+          <SimpleData name="SIG_CD">11560</SimpleData>
+          <SimpleData name="SIG_KOR_NM">영등포구</SimpleData>
+          <SimpleData name="BAS_ID">07429</SimpleData>
+          <SimpleData name="BAS_AR">0.05451700000000000</SimpleData>
+          <SimpleData name="NTFC_DE">20121221</SimpleData>
+          <SimpleData name="MVMN_DE">20121221</SimpleData>
+          <SimpleData name="MVMN_RESN">국가기초구역 최초생성</SimpleData>
+          <SimpleData name="OPERT_DE">20121221000000</SimpleData>
+        </SchemaData>
+      </ExtendedData>
+      <MultiGeometry>
+        <Polygon>
+          <altitudeMode>clampToGround</altitudeMode>
+          <outerBoundaryIs>
+            <LinearRing>
+              <altitudeMode>clampToGround</altitudeMode>
+              <coordinates>126.902824791287,37.4920162252461,0 126.902475119145,37.4917033668605,0 126.902295406582,37.4919175729008,0 126.902080391184,37.4921738526638,0 126.901912194559,37.4923743185408,0 126.901725966499,37.4925962848113,0 126.901606751882,37.4927383707921,0 126.901585244276,37.4927640040582,0 126.901412072958,37.4929704025801,0 126.901229500206,37.4931880012934,0 126.901176190495,37.4932589820291,0 126.901289921829,37.4933374024417,0 126.901456357116,37.4934514388467,0 126.901655657588,37.4935880007522,0 126.901689776336,37.4936113744785,0 126.901901425992,37.4937563887637,0 126.902160107415,37.4939346440522,0 126.902408103445,37.4941133403063,0 126.902628356842,37.4942703077458,0 126.902867772725,37.4944400849618,0 126.903383755252,37.4948224932805,0 126.903633969846,37.4950040627543,0 126.903667515958,37.4949732673607,0 126.90370186588,37.4949417338036,0 126.904067883373,37.4944393688072,0 126.904122619339,37.4943744699151,0 126.904349280431,37.4941363242154,0 126.904688860039,37.4938115044298,0 126.904757719868,37.4937456257108,0 126.904414164683,37.4934382562323,0 126.904314781894,37.4933493449788,0 126.903727254768,37.4928236855909,0 126.903664874688,37.4927678710847,0 126.903638366288,37.4927441528403,0 126.903216425275,37.4923666351235,0 126.903112346846,37.492273511269,0 126.902824791287,37.4920162252461,0</coordinates>
+            </LinearRing>
+          </outerBoundaryIs>
+        </Polygon>
+      </MultiGeometry>
+      <styleUrl>#KMLStyler</styleUrl>
+      <name>07429</name>
+    </Placemark>
+  </Document>
+</kml>

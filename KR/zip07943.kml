@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<kml xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:atom="http://www.w3.org/2005/Atom" xmlns="http://www.opengis.net/kml/2.2">
+  <Document>
+    <LookAt>
+      <longitude>127</longitude>
+      <latitude>37.5</latitude>
+      <range>7000000</range>
+      <tilt>10</tilt>
+      <heading>0</heading>
+    </LookAt>
+    <name>Korea</name>
+    <visibility>1</visibility>
+    <Style id="KMLStyler">
+      <IconStyle>
+        <scale>0.8</scale>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1.0</scale>
+      </LabelStyle>
+      <LineStyle>
+        <color>ffbc822f</color>
+        <width>2</width>
+        <gx:labelVisibility>0</gx:labelVisibility>
+      </LineStyle>
+      <PolyStyle>
+        <color>7fe1ca9e</color>
+      </PolyStyle>
+    </Style>
+    <Schema name="kml_schema_kr_2018_oct" id="kml_schema_kr_2018_oct">
+      <SimpleField name="BAS_MGT_SN" type="string"/>
+      <SimpleField name="CTP_KOR_NM" type="string"/>
+      <SimpleField name="SIG_CD" type="string"/>
+      <SimpleField name="SIG_KOR_NM" type="string"/>
+      <SimpleField name="BAS_ID" type="string"/>
+      <SimpleField name="BAS_AR" type="float"/>
+      <SimpleField name="NTFC_DE" type="string"/>
+      <SimpleField name="MVMN_DE" type="string"/>
+      <SimpleField name="MVMN_RESN" type="string"/>
+      <SimpleField name="OPERT_DE" type="string"/>
+    </Schema>
+    <Folder id="kml_schema_kr_2018_oct_folder">
+      <name>korea</name>
+    </Folder>
+    <Placemark>
+      <ExtendedData>
+        <SchemaData schemaUrl="#kml_schema_kr_2018_oct">
+          <SimpleData name="BAS_MGT_SN">1147000057</SimpleData>
+          <SimpleData name="CTP_KOR_NM">서울특별시</SimpleData>
+          <SimpleData name="SIG_CD">11470</SimpleData>
+          <SimpleData name="SIG_KOR_NM">양천구</SimpleData>
+          <SimpleData name="BAS_ID">07943</SimpleData>
+          <SimpleData name="BAS_AR">0.04152000000000000</SimpleData>
+          <SimpleData name="NTFC_DE">20121221</SimpleData>
+          <SimpleData name="MVMN_DE">20121221</SimpleData>
+          <SimpleData name="MVMN_RESN">국가기초구역 최초생성</SimpleData>
+          <SimpleData name="OPERT_DE">20121221000000</SimpleData>
+        </SchemaData>
+      </ExtendedData>
+      <MultiGeometry>
+        <Polygon>
+          <altitudeMode>clampToGround</altitudeMode>
+          <outerBoundaryIs>
+            <LinearRing>
+              <altitudeMode>clampToGround</altitudeMode>
+              <coordinates>126.855493572896,37.5269779502289,0 126.855989568016,37.526906897351,0 126.855990287659,37.5269033303021,0 126.856168143523,37.5260258551115,0 126.856258766026,37.5255787582245,0 126.856347182995,37.5251425515409,0 126.856347354361,37.5251416867971,0 126.856364841147,37.5250554290924,0 126.855897152091,37.5249923514483,0 126.855507398623,37.524939783813,0 126.855049889708,37.5248780668893,0 126.854772939576,37.5248407102912,0 126.854613835877,37.5248192490515,0 126.854537153903,37.5248103329207,0 126.854456377716,37.5248009431257,0 126.854101492049,37.5247596856961,0 126.854056038717,37.5247535922969,0 126.853818390056,37.5247217171236,0 126.853802511309,37.524719587332,0 126.853777358761,37.5247162131848,0 126.853382238302,37.5246504052296,0 126.853390393034,37.5247370640633,0 126.853390437304,37.5247375596656,0 126.85343511187,37.5252120521463,0 126.853478867494,37.5256766955561,0 126.853490801617,37.5256771069507,0 126.853780883328,37.5257169787313,0 126.854084989381,37.5257587684033,0 126.854095530017,37.5257602141405,0 126.854291843656,37.5257872005076,0 126.8543225608,37.5257914194042,0 126.854372731659,37.5257977888758,0 126.854625011097,37.5258298359049,0 126.854737333631,37.5263215938787,0 126.854742739979,37.5263452967368,0 126.854861670737,37.526865975654,0 126.854901434313,37.5270400699952,0 126.854906459475,37.5270620604816,0 126.855493572896,37.5269779502289,0</coordinates>
+            </LinearRing>
+          </outerBoundaryIs>
+        </Polygon>
+      </MultiGeometry>
+      <styleUrl>#KMLStyler</styleUrl>
+      <name>07943</name>
+    </Placemark>
+  </Document>
+</kml>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<kml xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:atom="http://www.w3.org/2005/Atom" xmlns="http://www.opengis.net/kml/2.2">
+  <Document>
+    <LookAt>
+      <longitude>127</longitude>
+      <latitude>37.5</latitude>
+      <range>7000000</range>
+      <tilt>10</tilt>
+      <heading>0</heading>
+    </LookAt>
+    <name>Korea</name>
+    <visibility>1</visibility>
+    <Style id="KMLStyler">
+      <IconStyle>
+        <scale>0.8</scale>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1.0</scale>
+      </LabelStyle>
+      <LineStyle>
+        <color>ffbc822f</color>
+        <width>2</width>
+        <gx:labelVisibility>0</gx:labelVisibility>
+      </LineStyle>
+      <PolyStyle>
+        <color>7fe1ca9e</color>
+      </PolyStyle>
+    </Style>
+    <Schema name="kml_schema_kr_2018_oct" id="kml_schema_kr_2018_oct">
+      <SimpleField name="BAS_MGT_SN" type="string"/>
+      <SimpleField name="CTP_KOR_NM" type="string"/>
+      <SimpleField name="SIG_CD" type="string"/>
+      <SimpleField name="SIG_KOR_NM" type="string"/>
+      <SimpleField name="BAS_ID" type="string"/>
+      <SimpleField name="BAS_AR" type="float"/>
+      <SimpleField name="NTFC_DE" type="string"/>
+      <SimpleField name="MVMN_DE" type="string"/>
+      <SimpleField name="MVMN_RESN" type="string"/>
+      <SimpleField name="OPERT_DE" type="string"/>
+    </Schema>
+    <Folder id="kml_schema_kr_2018_oct_folder">
+      <name>korea</name>
+    </Folder>
+    <Placemark>
+      <ExtendedData>
+        <SchemaData schemaUrl="#kml_schema_kr_2018_oct">
+          <SimpleData name="BAS_MGT_SN">1156000180</SimpleData>
+          <SimpleData name="CTP_KOR_NM">서울특별시</SimpleData>
+          <SimpleData name="SIG_CD">11560</SimpleData>
+          <SimpleData name="SIG_KOR_NM">영등포구</SimpleData>
+          <SimpleData name="BAS_ID">07337</SimpleData>
+          <SimpleData name="BAS_AR">1.30538099999999990</SimpleData>
+          <SimpleData name="NTFC_DE">20121221</SimpleData>
+          <SimpleData name="MVMN_DE">20121221</SimpleData>
+          <SimpleData name="MVMN_RESN">국가기초구역 최초생성</SimpleData>
+          <SimpleData name="OPERT_DE">20121221000000</SimpleData>
+        </SchemaData>
+      </ExtendedData>
+      <MultiGeometry>
+        <Polygon>
+          <altitudeMode>clampToGround</altitudeMode>
+          <outerBoundaryIs>
+            <LinearRing>
+              <altitudeMode>clampToGround</altitudeMode>
+              <coordinates>126.948656304702,37.528583896345,0 126.948655758563,37.5285836114143,0 126.948522462869,37.5285140685382,0 126.93810528437,37.5230813227327,0 126.937787810945,37.5229157277707,0 126.935239526391,37.5248492119301,0 126.932880747307,37.5266358976069,0 126.932555279565,37.5268650291335,0 126.931276802859,37.5278218705729,0 126.930634832959,37.5282628210604,0 126.929802106902,37.528865813274,0 126.929610378827,37.5290102341767,0 126.930268166173,37.5295679336838,0 126.933206080662,37.5313905060257,0 126.93602611929,37.5331785125137,0 126.941030286121,37.5362652601147,0 126.94108330242,37.5362315010028,0 126.941393722956,37.5360337202764,0 126.941866511498,37.5357242436414,0 126.942979759476,37.5350099166425,0 126.943858091335,37.5344624366859,0 126.944219251754,37.5342353909442,0 126.944282601832,37.5341577109834,0 126.944585187709,37.5337808455523,0 126.944618448263,37.5337394699422,0 126.945477342425,37.532672770903,0 126.945513965348,37.532627170968,0 126.947113499307,37.530631658773,0 126.947139498582,37.5305992890243,0 126.947411160987,37.5301722885861,0 126.947417356135,37.5301630021758,0 126.947444601621,37.5301278218267,0 126.947527049662,37.5300236776063,0 126.947684880452,37.5298224315404,0 126.947776353043,37.529706470211,0 126.948056081275,37.5293498665639,0 126.948268749194,37.5290785381463,0 126.948496464389,37.5287880609515,0 126.94852618825,37.528750349663,0 126.948595011964,37.5286625335837,0 126.948636887213,37.5286088080329,0 126.948656304702,37.528583896345,0</coordinates>
+            </LinearRing>
+          </outerBoundaryIs>
+        </Polygon>
+      </MultiGeometry>
+      <styleUrl>#KMLStyler</styleUrl>
+      <name>07337</name>
+    </Placemark>
+  </Document>
+</kml>

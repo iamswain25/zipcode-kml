@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<kml xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:atom="http://www.w3.org/2005/Atom" xmlns="http://www.opengis.net/kml/2.2">
+  <Document>
+    <LookAt>
+      <longitude>127</longitude>
+      <latitude>37.5</latitude>
+      <range>7000000</range>
+      <tilt>10</tilt>
+      <heading>0</heading>
+    </LookAt>
+    <name>Korea</name>
+    <visibility>1</visibility>
+    <Style id="KMLStyler">
+      <IconStyle>
+        <scale>0.8</scale>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1.0</scale>
+      </LabelStyle>
+      <LineStyle>
+        <color>ffbc822f</color>
+        <width>2</width>
+        <gx:labelVisibility>0</gx:labelVisibility>
+      </LineStyle>
+      <PolyStyle>
+        <color>7fe1ca9e</color>
+      </PolyStyle>
+    </Style>
+    <Schema name="kml_schema_kr_2018_oct" id="kml_schema_kr_2018_oct">
+      <SimpleField name="BAS_MGT_SN" type="string"/>
+      <SimpleField name="CTP_KOR_NM" type="string"/>
+      <SimpleField name="SIG_CD" type="string"/>
+      <SimpleField name="SIG_KOR_NM" type="string"/>
+      <SimpleField name="BAS_ID" type="string"/>
+      <SimpleField name="BAS_AR" type="float"/>
+      <SimpleField name="NTFC_DE" type="string"/>
+      <SimpleField name="MVMN_DE" type="string"/>
+      <SimpleField name="MVMN_RESN" type="string"/>
+      <SimpleField name="OPERT_DE" type="string"/>
+    </Schema>
+    <Folder id="kml_schema_kr_2018_oct_folder">
+      <name>korea</name>
+    </Folder>
+    <Placemark>
+      <ExtendedData>
+        <SchemaData schemaUrl="#kml_schema_kr_2018_oct">
+          <SimpleData name="BAS_MGT_SN">1123000135</SimpleData>
+          <SimpleData name="CTP_KOR_NM">서울특별시</SimpleData>
+          <SimpleData name="SIG_CD">11230</SimpleData>
+          <SimpleData name="SIG_KOR_NM">동대문구</SimpleData>
+          <SimpleData name="BAS_ID">02476</SimpleData>
+          <SimpleData name="BAS_AR">0.04132200000000000</SimpleData>
+          <SimpleData name="NTFC_DE">20121221</SimpleData>
+        </SchemaData>
+      </ExtendedData>
+      <MultiGeometry>
+        <Polygon>
+          <altitudeMode>clampToGround</altitudeMode>
+          <outerBoundaryIs>
+            <LinearRing>
+              <altitudeMode>clampToGround</altitudeMode>
+              <coordinates>127.034144124023,37.5844162301623,0 127.034154922529,37.5844109023517,0 127.034189830903,37.5843936928778,0 127.034368209915,37.5843061756786,0 127.034435796651,37.5842730185957,0 127.03454494143,37.5842319572195,0 127.034636757886,37.5842025323312,0 127.034657068041,37.5842007606995,0 127.034667223118,37.5841998748824,0 127.03485858139,37.5842014157394,0 127.035260519142,37.5842231954953,0 127.03554504259,37.5842295085658,0 127.035322975877,37.582824000145,0 127.035322968989,37.5828239565643,0 127.035081427606,37.5828216098346,0 127.035024185954,37.5828199863001,0 127.034463826983,37.5828040794293,0 127.034324560057,37.582798162695,0 127.033926141973,37.5827812441039,0 127.033906499019,37.5827804115776,0 127.033804072622,37.5827760608418,0 127.033798966584,37.5827758369916,0 127.033162392534,37.5827595393148,0 127.033084085946,37.5829552364163,0 127.033070741894,37.5832863703407,0 127.033070428136,37.5832940558344,0 127.033062159483,37.5834992756047,0 127.033071077801,37.5835726134727,0 127.033072588789,37.5835850016247,0 127.033082370594,37.5836655201173,0 127.033074081325,37.5837414394021,0 127.033040311813,37.5837744515357,0 127.033022985694,37.5837914037045,0 127.032935304455,37.5838279350177,0 127.032868392608,37.5838782188057,0 127.032668366057,37.5839657754986,0 127.032321322059,37.5839554421547,0 127.03244084474,37.5840947303443,0 127.032712932669,37.584411805755,0 127.032704912633,37.5844557219195,0 127.032704528581,37.5844578393374,0 127.032753561791,37.5844830629848,0 127.032790580186,37.584502100023,0 127.032819796309,37.584517129732,0 127.032865173526,37.5845713119835,0 127.032908172069,37.5846226567445,0 127.032983440567,37.5847083835173,0 127.033076017087,37.5848138101725,0 127.033124950333,37.5848695320562,0 127.033216643802,37.5848406038504,0 127.033389230307,37.584757747788,0 127.033529201792,37.5846820901865,0 127.034055879549,37.5844597270794,0 127.034114241346,37.5844309515144,0 127.034144124023,37.5844162301623,0</coordinates>
+            </LinearRing>
+          </outerBoundaryIs>
+        </Polygon>
+      </MultiGeometry>
+      <styleUrl>#KMLStyler</styleUrl>
+      <name>02476</name>
+    </Placemark>
+  </Document>
+</kml>
