@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>Postal Area</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="kakao.min.js"></script>
     <!--
       <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
     -->
@@ -28,6 +29,7 @@
     <div id="map"></div>
     <script>
       var map;
+      Kakao.init("6795e3ba76d0ddbb62e2368e410f74cb");
       function addKml(url) {
         const kmlLayer = new google.maps.KmlLayer({
           url,
@@ -39,14 +41,77 @@
         });
       }
       function initMap() {
+        const geocoder = new google.maps.Geocoder();
         map = new google.maps.Map(document.getElementById("map"), {
           center: { lat: 37.593511, lng: 127.004565 },
           zoom: 15
         });
-        addKml(`https://iamswain25.github.io/zipcode-kml/KR/zip08841.kml`);
-        addKml(`https://iamswain25.github.io/zipcode-kml/KR/zip07510.kml`);
-        addKml(`https://iamswain25.github.io/zipcode-kml/KR/zip08866.kml`);
-        addKml(`https://iamswain25.github.io/zipcode-kml/KR/zip07513.kml`);
+        map.addListener("click", function(e) {
+          // placeMarkerAndPanTo(e.latLng, map);
+          console.log(e);
+
+          geocoder.geocode(
+            {
+              location: e.latLng
+            },
+            (arr, status) => {
+              if (arr.length > 0) {
+                const postalCode = arr[0].address_components.find(cp =>
+                  cp.types.find(type => type === "postal_code")
+                );
+                const country = arr[0].address_components.find(cp =>
+                  cp.types.find(type => type === "country")
+                );
+                const { formatted_address } = arr.find(ob =>
+                  ob.types.find(
+                    type =>
+                      type.indexOf("sublocality") >= 0 ||
+                      type.indexOf("neighborhood")
+                  )
+                );
+                console.log(arr, postalCode, country, formatted_address);
+                if (country.short_name == "KR") {
+                  function piper(data) {
+                    console.log(data, arguments);
+                  }
+                  const url = `https://dapi.kakao.com/v2/local/geo/coord2address.json?x=${String(
+                    e.latLng.lng()
+                  )}&y=${String(e.latLng.lat())}`;
+                  fetch(url, {
+                    headers: {
+                      Authorization: `KakaoAK baf5aa7e635924bdc4fc623687adf15a`
+                    }
+                    // method: "GET"
+                  })
+                    .then(data => data.json())
+                    .then(data => {
+                      const code = data.documents[0].road_address.zone_no;
+                      addKml(
+                        `https://iamswain25.github.io/zipcode-kml/KR/zip${code}.kml`
+                      );
+                    })
+                    .catch(err => console.log(err));
+                } else {
+                  addKml(
+                    `https://iamswain25.github.io/zipcode-kml/${
+                      country.short_name
+                    }/zip${postalCode.long_name}.kml`
+                  );
+                }
+              } else {
+                console.log(status);
+              }
+            }
+          );
+        });
+        // addKml(`https://iamswain25.github.io/zipcode-kml/KR/zip01000.kml`);
+        // addKml(`https://iamswain25.github.io/zipcode-kml/KR/zip02137.kml`);
+        // addKml(`https://iamswain25.github.io/zipcode-kml/KR/zip06690.kml`);
+        // addKml(`https://iamswain25.github.io/zipcode-kml/KR/zip07512.kml`);
+        // addKml(`https://iamswain25.github.io/zipcode-kml/KR/zip07513.kml`);
+        // addKml(`https://iamswain25.github.io/zipcode-kml/KR/zip04996.kml`);
+        // addKml(`https://iamswain25.github.io/zipcode-kml/KR/zip08841.kml`);
+        // addKml(`https://iamswain25.github.io/zipcode-kml/KR/zip08866.kml`);
       }
     </script>
     <script
