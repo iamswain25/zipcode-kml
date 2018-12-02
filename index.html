@@ -5,7 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>Postal Area</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <script src="kakao.min.js"></script>
     <!--
       <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
     -->
@@ -29,7 +28,6 @@
     <div id="map"></div>
     <script>
       var map;
-      Kakao.init("6795e3ba76d0ddbb62e2368e410f74cb");
       function addKml(url) {
         const kmlLayer = new google.maps.KmlLayer({
           url,
@@ -43,22 +41,36 @@
       function initMap() {
         const geocoder = new google.maps.Geocoder();
         map = new google.maps.Map(document.getElementById("map"), {
-          center: { lat: 37.593511, lng: 127.004565 },
-          zoom: 15
+          // center: { lat: 37.55, lng: -120 }, //us
+          center: { lat: 37.55, lng: 126.99 },//seoul
+          // center: { lat: 37.593511, lng: 127.004565 },
+          zoom: 13
         });
         map.addListener("click", function(e) {
-          // placeMarkerAndPanTo(e.latLng, map);
-          console.log(e);
-
           geocoder.geocode(
             {
               location: e.latLng
             },
             (arr, status) => {
               if (arr.length > 0) {
-                const postalCode = arr[0].address_components.find(cp =>
-                  cp.types.find(type => type === "postal_code")
-                );
+                let postalCode = null;
+                const existPostalCode = arr.some(a => {
+                  const code = a.address_components.find(cp =>
+                    cp.types.find(type => type === "postal_code")
+                  );
+                  if (code !== undefined) {
+                    postalCode = code.long_name;
+                    return true;
+                  } else {
+                    return false;
+                  }
+                });
+                if (!existPostalCode) {
+                  alert(
+                    `No postal code info at point ${e.latLng.lng()}, ${e.latLng.lat()}`
+                  );
+                  return;
+                }
                 const country = arr[0].address_components.find(cp =>
                   cp.types.find(type => type === "country")
                 );
@@ -90,12 +102,15 @@
                         `https://iamswain25.github.io/zipcode-kml/KR/zip${code}.kml`
                       );
                     })
-                    .catch(err => console.log(err));
+                    .catch(err => {
+                      console.log(err);
+                      alert("도로명주소가 없습니다.");
+                    });
                 } else {
                   addKml(
                     `https://iamswain25.github.io/zipcode-kml/${
                       country.short_name
-                    }/zip${postalCode.long_name}.kml`
+                    }/zip${postalCode}.kml`
                   );
                 }
               } else {
